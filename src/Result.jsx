@@ -8,7 +8,7 @@ const Result = ({ name, score }) => {
   const[state, setState]=useState();
   const history = useHistory();
 const Fscore=()=>{
-  if(!score>=5){
+  if(score>=5){
     setState("Great, You Are Passed 👍")
   }else{
     setState("Sorry, You are Failed 👎")
